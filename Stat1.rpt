@@ -1,0 +1,187 @@
+Compuware COMNET III  Release 2.5.2.814  Mon Dec 06 09:36:14 2021   PAGE     1
+
+                                   Coursework                                   
+
+                         NODES: RECEIVED MESSAGE COUNTS                         
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+      RECEIVER            COUNT                   MESSAGE NAME
+______________________  __________  _________________________________________
+
+Manchester LAN.MAN - P       113    KTM-ATM MSG REQ                          
+Manchester LAN.MAN - P       110    PKR-ATM MSG REQ                          
+
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Dec 06 09:36:14 2021   PAGE     2
+
+                                   Coursework                                   
+
+                           LINKS: CHANNEL UTILIZATION                           
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+                             FRAMES           TRANSMISSION DELAY (MS)       %
+LINK                   DELIVERED RST/ERR  AVERAGE    STD DEV    MAXIMUM   UTIL
+_____________________  _________ ______  _________  _________  _________  _____
+
+Manchester LAN.MAN-Eth      4860      0      0.065      0.013      0.136 0.2447
+Kathmandu LAN.KTM-Toke     11966      0      0.036      0.012      0.082 0.3549
+Pokhara LAN.PKR-Token      11989      0      0.036      0.012      0.082 0.3562
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Dec 06 09:36:14 2021   PAGE     3
+
+                                   Coursework                                   
+
+                             LINKS: COLLISION STATS                             
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+
+LINK NAME                 Manchester
+                          LAN.MAN-Et
+                            hernet  
+
+ACCESS PROTOCOL              CSMA/CD
+
+COLLISION EPISODES                 0
+
+COLLIDED FRAMES                    0
+
+NBR OF TRIES TO RESOLVE
+  AVERAGE                       0.00
+  STANDARD DEVIATION            0.00
+  MAXIMUM                          0
+
+NBR OF DEFERRALS                   0
+
+DEFERRAL DELAY  (MS)
+  AVERAGE                       0.00
+  STANDARD DEVIATION            0.00
+  MAXIMUM                       0.00
+
+DEFERRAL QUEUE SIZE  (FRAMES)
+  AVERAGE                       0.00
+  STANDARD DEVIATION            0.00
+  MAXIMUM                          0
+
+MULTIPLE COLLISION EPISODES
+  NBR EPISODES                     0
+  AVG PER EPISODE               0.00
+  MAX PER EPISODE                  0
+
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Dec 06 09:36:14 2021   PAGE     4
+
+                                   Coursework                                   
+
+                         WAN CLOUDS: FRAME DELAY BY VC                          
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+CLOUD:                      FRAME DELAY (MS)               BURST SIZE (kb)
+  VC                      AVG      STD      MAX           AVG           MAX
+______________________  _______  _______  _______    ____________  ____________
+
+WAN Cloud
+  Manchester - Kathman       97        0       97               2             5
+  Kathmandu - Manchest    60159    17306    90032               5            10
+  Pokhara - Manchester    60157    17334    90089               5            11
+  Manchester - Pokhara       97        0       97               2             5
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Dec 06 09:36:14 2021   PAGE     5
+
+                                   Coursework                                   
+
+                         WAN CLOUDS: FRAME COUNTS BY VC                         
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+CLOUD:                                    FRAMES / KILOBITS
+  VC:  FRAMES                    ACCEPTED                     DROPPED
+       KILOBITS            NORMAL          DE           NORMAL          DE
+______________________  ____________  ____________   ____________  ____________
+
+WAN Cloud               (TOTAL KILOBITS TRANSMITTED =         1696 )
+  Manchester - Kat Frm          1212             0              0             0
+                    kb           388             0              0             0
+  Kathmandu - Manc Frm          1213             0              0             0
+                    kb           460             0              0             0
+  Pokhara - Manche Frm          1217             0              0             0
+                    kb           458             0              0             0
+  Manchester - Pok Frm          1217             0              0             0
+                    kb           389             0              0             0
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Dec 06 09:36:14 2021   PAGE     6
+
+                                   Coursework                                   
+
+                         WAN CLOUDS: ACCESS LINK STATS                          
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+CLOUD:                            FRAMES            BUFFER (BYTES)       % UTIL
+  ACCESS LINK  (ENTRY)     ACCEPTED    DROPPED    MAX     AVG     STD          
+               (EXIT)                                                          
+________________________  __________  _________  ______  ______  ______  ______
+
+WAN Cloud
+  Manchester Acces Entry        2429          0    N/A     N/A     N/A    87.74
+                    Exit        4841          0  172587  114915   33254  100.00
+  Kathmandu Access Entry        2417          0    N/A     N/A     N/A   100.00
+                    Exit        1212          0      40      18      20   43.76
+  Pokhara Access L Entry        2425          0    N/A     N/A     N/A   100.00
+                    Exit        1217          0      40      18      20   43.95
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Dec 06 09:36:14 2021   PAGE     7
+
+                                   Coursework                                   
+
+                   MESSAGE + RESPONSE SOURCES: MESSAGE DELAY                    
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+ORIGIN / MSG SRC NAME:  MESSAGES                 MESSAGE DELAY 
+  DESTINATION LIST      ASSEMBLED      AVERAGE       STD DEV       MAXIMUM
+______________________  _________   ____________  ____________  ____________
+
+Manchester LAN.MAN - Processing Server / src MAN- ATM MSG RESP:
+  ECHO                          0       0.000 MS      0.000 MS      0.000 MS
+Kathmandu LAN.KTM- ATM Group / src KTM-ATM MSG REQ:
+  Manchester LAN.MAN -         17   117.20039 S   36140.339 MS  177.90295 S 
+Kathmandu LAN.KTM- ATM Teller / src KTM- ATM Teller MSG REQ:
+  Manchester LAN.MAN -          0       0.000 MS      0.000 MS      0.000 MS
+Pokhara LAN.PKR- ATM Group / src PKR-ATM MSG REQ:
+  Manchester LAN.MAN -         17   118.51851 S   35018.643 MS  177.49400 S 
+Pokhara LAN.PKR- ATM Teller / src PKR- ATM Teller MSG REQ:
+  Manchester LAN.MAN -          0       0.000 MS      0.000 MS      0.000 MS
+
+
+Compuware COMNET III  Release 2.5.2.814  Mon Dec 06 09:36:14 2021   PAGE     8
+
+                                   Coursework                                   
+
+                 MESSAGE + RESPONSE SOURCES: MESSAGE DELIVERED                  
+
+                    REPLICATION 1 FROM 60.0 TO 180.0 SECONDS                    
+
+ORIGIN / MSG SRC NAME:  MESSAGES                 MESSAGE DELAY 
+  DESTINATION LIST      ASSEMBLED      AVERAGE       STD DEV       MAXIMUM
+______________________  _________   ____________  ____________  ____________
+
+Manchester LAN.MAN - Processing Server / src MAN- ATM MSG RESP:
+  ECHO                          0       0.000 MS      0.000 MS      0.000 MS
+Kathmandu LAN.KTM- ATM Group / src KTM-ATM MSG REQ:
+  Manchester LAN.MAN -        113   117.40456 S   34524.072 MS  177.81935 S 
+Kathmandu LAN.KTM- ATM Teller / src KTM- ATM Teller MSG REQ:
+  Manchester LAN.MAN -          0       0.000 MS      0.000 MS      0.000 MS
+Pokhara LAN.PKR- ATM Group / src PKR-ATM MSG REQ:
+  Manchester LAN.MAN -        110   117.81080 S   34127.375 MS  177.88275 S 
+Pokhara LAN.PKR- ATM Teller / src PKR- ATM Teller MSG REQ:
+  Manchester LAN.MAN -          0       0.000 MS      0.000 MS      0.000 MS
